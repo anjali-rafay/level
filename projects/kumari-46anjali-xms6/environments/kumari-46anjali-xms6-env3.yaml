@@ -4,6 +4,8 @@ metadata:
   name: kumari-46anjali-xms6-env3
   project: kumari-46anjali-xms6
 spec:
+  reconcile_resources:
+  - name: kumari-46anjali-xms6-rt
   template:
     name: kumari-46anjali-xms6-et
     version: v1
