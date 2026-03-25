@@ -1,0 +1,21 @@
+apiVersion: eaas.envmgmt.io/v1
+kind: ResourceTemplate
+metadata:
+  name: kumari-46anjali-xms6-rt-python
+  project: kumari-46anjali-xms6
+spec:
+  provider: custom
+  providerOptions:
+    custom:
+      tasks:
+        - agents:
+            - name: em-gitops-agent
+          executeOnce: true
+          name: python-code
+          onFailure: unspecified
+          options: {}
+          type: workflowHandler
+          workflowHandler:
+            name: kumari-46anjali-xms6-wh
+  version: v1
+  versionState: draft

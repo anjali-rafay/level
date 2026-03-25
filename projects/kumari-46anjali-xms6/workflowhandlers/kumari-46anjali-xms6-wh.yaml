@@ -1,0 +1,15 @@
+apiVersion: eaas.envmgmt.io/v1
+kind: WorkflowHandler
+metadata:
+  name: kumari-46anjali-xms6-wh
+  project: kumari-46anjali-xms6
+spec:
+  config:
+    function:
+      language: python
+      name: kumari-46anjali-xms6-wh
+      skipBuild: false
+      source: "from typing import Dict, Any\r\nfrom logging import Logger\r\n\r\ndef handle(logger: Logger, request: Dict[str, Any]) -> Dict[str, Any]:\r\n    logger.info(f\"Inside function handler, request: {request}\", extra={\"request\": request})\r\n    logger.info(\"Hello world...\")\r\n\r\n    return {\r\n        \"output\": \"Hello world\"\r\n    }"
+      targetPlatforms:
+        - linux/amd64
+    type: function
