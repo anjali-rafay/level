@@ -5,27 +5,29 @@ metadata:
   project: kumari-46anjali-xms6
 spec:
   envs:
-    - key: RCTL_API_KEY
-      options:
-        mask: true
-        override:
-          type: notallowed
-        sensitive: true
-      value: UPDATEVALUE
-    - key: RCTL_API_SECRET
-      options:
-        mask: true
-        override:
-          type: notallowed
-        sensitive: true
-      value: UPDATEVALUE
-    - key: RCTL_PROJECT
-      options:
-        override:
-          type: notallowed
-      value: defaultproject
-    - key: RCTL_REST_ENDPOINT
-      options:
-        override:
-          type: notallowed
-      value: console.rafay.dev
+  - key: RCTL_API_KEY
+    options:
+      mask: true
+      override:
+        type: notallowed
+      sensitive: true
+    value: sealed://RCTL_API_KEY.
+  - key: RCTL_API_SECRET
+    options:
+      mask: true
+      override:
+        type: notallowed
+      sensitive: true
+    value: sealed://RCTL_API_SECRET.
+  - key: RCTL_PROJECT
+    options:
+      override:
+        type: notallowed
+    value: defaultproject
+  - key: RCTL_REST_ENDPOINT
+    options:
+      override:
+        type: notallowed
+    value: console.rafay.dev
+  secret:
+    name: file://artifacts/kumari-46anjali-xms6-rafay-cc/sealed-secret.yaml

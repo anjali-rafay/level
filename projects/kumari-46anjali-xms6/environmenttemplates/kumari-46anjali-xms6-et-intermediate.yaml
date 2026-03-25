@@ -5,49 +5,50 @@ metadata:
   project: kumari-46anjali-xms6
 spec:
   agents:
-    - name: em-gitops-agent
+  - name: em-gitops-agent
+  allowScheduleOverrides: false
   resources:
-    - kind: resourcetemplate
-      name: kumari-46anjali-xms6-rt-intermediate
-      resourceOptions:
-        version: v1
-      type: dynamic
+  - kind: resourcetemplate
+    name: kumari-46anjali-xms6-rt-intermediate
+    resourceOptions:
+      version: v1
+    type: dynamic
   variables:
-    - name: input_name
-      options:
-        displayMetadata:
-          disabled: false
-          section: ""
-          sectionDescription: ""
-          tooltip: ""
-          weight: ""
-        override:
-          type: allowed
-        required: true
-      valueType: text
-    - name: project
-      options:
-        displayMetadata:
-          disabled: false
-          section: ""
-          sectionDescription: ""
-          tooltip: ""
-          weight: ""
-        override:
-          type: notallowed
-      value: $(environment.project.name)$
-      valueType: expression
-    - name: cluster_name
-      options:
-        displayMetadata:
-          disabled: false
-          section: ""
-          sectionDescription: ""
-          tooltip: ""
-          weight: ""
-        override:
-          type: allowed
-        required: true
-      valueType: text
+  - name: input_name
+    options:
+      displayMetadata:
+        disabled: false
+        section: ""
+        sectionDescription: ""
+        tooltip: ""
+        weight: ""
+      override:
+        type: allowed
+      required: true
+    valueType: text
+  - name: project
+    options:
+      displayMetadata:
+        disabled: false
+        section: ""
+        sectionDescription: ""
+        tooltip: ""
+        weight: ""
+      override:
+        type: notallowed
+    value: $(environment.project.name)$
+    valueType: expression
+  - name: cluster_name
+    options:
+      displayMetadata:
+        disabled: false
+        section: ""
+        sectionDescription: ""
+        tooltip: ""
+        weight: ""
+      override:
+        type: allowed
+      required: true
+    valueType: text
   version: v1
   versionState: draft

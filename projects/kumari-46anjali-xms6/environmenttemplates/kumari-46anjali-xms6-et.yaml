@@ -5,12 +5,13 @@ metadata:
   project: kumari-46anjali-xms6
 spec:
   agents:
-    - name: em-gitops-agent
+  - name: em-gitops-agent
+  allowScheduleOverrides: false
   resources:
-    - kind: resourcetemplate
-      name: kumari-46anjali-xms6-rt
-      resourceOptions:
-        version: v1
-      type: dynamic
+  - kind: resourcetemplate
+    name: kumari-46anjali-xms6-rt
+    resourceOptions:
+      version: v1
+    type: dynamic
   version: v1
   versionState: draft
