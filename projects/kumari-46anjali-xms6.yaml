@@ -1,0 +1,7 @@
+apiVersion: system.k8smgmt.io/v3
+kind: Project
+metadata:
+  name: kumari-46anjali-xms6
+spec:
+  driftWebhook:
+    enabled: true
