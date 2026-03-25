@@ -1,0 +1,45 @@
+apiVersion: eaas.envmgmt.io/v1
+kind: Environment
+metadata:
+  labels:
+    organizationId: pkv3yem
+    partnerId: rx28oml
+    projectId: 2471o72
+    serviceId: 019d24ae-c4ed-79e6-9492-676b301129d2
+    serviceName: kumari-46anjali-xms6-custom-app
+    workspace: developers-xms6
+    workspaceId: 019d24ad-9fdd-7b26-b602-692236b8adc0
+  name: kumari-46anjali-xms6-custom-app-c730s
+  project: kumari-46anjali-xms6
+spec:
+  template:
+    name: kumari-46anjali-xms6-et-intermediate
+    version: v1
+    versionState: unspecified
+  variables:
+  - name: input_name
+    options:
+      displayMetadata:
+        disabled: false
+        section: ""
+        sectionDescription: ""
+        tooltip: ""
+        weight: ""
+      override:
+        type: allowed
+      required: true
+    value: You money making machine
+    valueType: text
+  - name: cluster_name
+    options:
+      displayMetadata:
+        disabled: false
+        section: ""
+        sectionDescription: ""
+        tooltip: ""
+        weight: ""
+      override:
+        type: allowed
+      required: true
+    value: kumari-46anjali-xms6-cluster1
+    valueType: text
