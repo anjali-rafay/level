@@ -9,3 +9,9 @@ variable "secret" {
   type        = string
   sensitive   = true
 }
+
+variable "username" {
+  description = "The name of the user to print"
+  type        = string
+  default     = "Tony Stark"
+}

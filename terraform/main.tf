@@ -20,3 +20,13 @@ resource "null_resource" "secret" {
 EOF
   }
 }
+
+resource "null_resource" "username" {
+  provisioner "local-exec" {
+    command = <<EOF
+###################################
+#    Name of User: ${var.username}    #
+###################################
+EOF
+  }
+}
