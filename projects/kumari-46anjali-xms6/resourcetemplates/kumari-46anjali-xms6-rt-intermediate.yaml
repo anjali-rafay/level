@@ -1,20 +1,20 @@
 apiVersion: eaas.envmgmt.io/v1
 kind: ResourceTemplate
 metadata:
-  name: kumari-46anjali-xms6-rt
+  name: kumari-46anjali-xms6-rt-intermediate
   project: kumari-46anjali-xms6
 spec:
   agents:
     - name: em-gitops-agent
   contexts:
-    - name: kumari-46anjali-xms6-cc
+    - name: kumari-46anjali-xms6-rafay-cc
   provider: opentofu
   providerOptions:
     openTofu:
       backendType: system
   repositoryOptions:
     branch: main
-    directoryPath: /terraform/
+    directoryPath: /terraform/intermediate/
     name: github-rafay-training
   version: v1
   versionState: draft
