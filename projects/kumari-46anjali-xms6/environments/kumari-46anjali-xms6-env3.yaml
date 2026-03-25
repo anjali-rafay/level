@@ -1,0 +1,10 @@
+apiVersion: eaas.envmgmt.io/v1
+kind: Environment
+metadata:
+  name: kumari-46anjali-xms6-env3
+  project: kumari-46anjali-xms6
+spec:
+  template:
+    name: kumari-46anjali-xms6-et
+    version: v1
+    versionState: unspecified
