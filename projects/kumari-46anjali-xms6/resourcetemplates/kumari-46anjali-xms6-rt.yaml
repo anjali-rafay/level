@@ -5,13 +5,14 @@ metadata:
   project: kumari-46anjali-xms6
 spec:
   agents:
-    - name: em-gitops-agent
+  - name: em-gitops-agent
   contexts:
-    - name: kumari-46anjali-xms6-cc
+  - name: kumari-46anjali-xms6-cc
   provider: opentofu
   providerOptions:
     openTofu:
       backendType: system
+      refresh: true
   repositoryOptions:
     branch: main
     directoryPath: /terraform/
